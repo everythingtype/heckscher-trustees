@@ -1,0 +1,1 @@
+<h3 class="searchtitle"><?php printf( __( 'Search Results for:<br/><strong>&ldquo;%s&rdquo;</strong>'), get_search_query() ); ?></h3>

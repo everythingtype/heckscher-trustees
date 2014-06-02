@@ -1,0 +1,27 @@
+.ourhistory {font-family: 'Rotis Serif'; font-weight: 400; font-size: 22px; line-height: 1.36; }
+
+.ourhistory h2 { font-family: "Rotis Semi"; font-weight: 700; font-size: 42px; }
+
+.ourhistory h3 { font-family: "Rotis Semi"; font-weight: 700; font-size: 42px; line-height: 1.05; margin: .75em 0 0 0; }
+.ourhistory h3 span { color: #ef461b; }
+
+.ourhistory .imageblock { font-family: "Rotis Sans"; font-weight: 200; font-size: 18px; line-height: 0; margin: 2em auto;}
+.ourhistory .imageblock p { margin: 0; padding: 20px; line-height: 1.3;}
+.ourhistory .imageblock .image p {  padding: .75em 0 0 0; }
+.ourhistory .imageblock span { color: #9d9c8e; }
+
+.ourhistory .chapter {padding-bottom: 4em; }
+
+.chapterone .imageblock { overflow: hidden;}
+.chapterone .image { margin-left: 20px; float: left; width: 248px; }
+.chapterone .image.first { margin-left: 0;}
+
+.chaptertwo { background: #fff; }
+.chaptertwo .imageblock { background: #EEEDE4; }
+	
+.chapterthree .imageblock { background: #fff; width: 620px; }	
+	
+.chapterfour { background: #fff; }
+.chapterfour .imageblock { background: #EEEDE4; }
+
+.chapterfive .imageblock { background: #fff; }

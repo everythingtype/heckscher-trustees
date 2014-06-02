@@ -1,0 +1,165 @@
+/*
+ * jQuery wooslider v2.2.0
+ * http://www.woothemes.com/wooslider/
+ *
+ * Copyright 2012 WooThemes
+ * Free to use under the GPLv2 license.
+ * http://www.gnu.org/licenses/gpl-2.0.html
+ *
+ * Contributing author: Tyler Smith (@mbmufffin)
+ */
+
+
+/* Browser Resets
+*********************************/
+.wooslider-container a:active,
+.wooslider a:active,
+.wooslider-container a:focus,
+.wooslider a:focus  {outline: none;}
+.slides,
+.wooslider-control-nav,
+.wooslider-direction-nav {margin: 0; padding: 0; list-style: none;}
+
+/* Icon Fonts
+*********************************/
+/* Font-face Icons */
+@font-face {
+	font-family: 'flexslider-icon';
+	src:url('../fonts/flexslider-icon.eot');
+	src:url('../fonts/flexslider-icon.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/flexslider-icon.woff') format('woff'),
+		url('../fonts/flexslider-icon.ttf') format('truetype'),
+		url('../fonts/flexslider-icon.svg#flexslider-icon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* wooslider Necessary Styles
+*********************************/
+.wooslider {margin: 0; padding: 0;}
+.wooslider .slides > li {display: none; -webkit-backface-visibility: hidden;} /* Hide the slides before the JS is loaded. Avoids image jumping */
+.wooslider .slides img {width: 100%; display: block;}
+.wooslider-pauseplay span {text-transform: capitalize;}
+
+/* Clearfix for the .slides element */
+.slides:after {content: "\0020"; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;}
+html[xmlns] .slides {display: block;}
+* html .slides {height: 1%;}
+
+/* No JavaScript Fallback */
+/* If you are not using another script, such as Modernizr, make sure you
+ * include js that eliminates this class on page load */
+.no-js .slides > li:first-child {display: block;}
+
+/* wooslider Default Theme
+*********************************/
+.wooslider { margin: 0; position: relative; zoom: 1; }
+.wooslider-viewport { max-height: 2000px; -webkit-transition: all 1s ease; -moz-transition: all 1s ease; -o-transition: all 1s ease; transition: all 1s ease; }
+.loading .wooslider-viewport { max-height: 300px; }
+.wooslider .slides { zoom: 1; }
+.carousel li { margin-right: 5px; }
+
+/* Direction Nav */
+.wooslider-direction-nav {*height: 0;}
+.wooslider-direction-nav a  { display: block; width: 80px; height: 80px; margin: -20px 0 0; position: absolute; top: 152px; z-index: 10; overflow: hidden; opacity: 0; cursor: pointer; color: #fff; -webkit-transition: all .3s ease; -moz-transition: all .3s ease; transition: all .3s ease; }
+.wooslider-direction-nav .wooslider-prev { left: -80px; }
+.wooslider-direction-nav .wooslider-next { right: -80px; text-align: right; }
+.wooslider:hover .wooslider-prev { opacity: 0.7; left: 0; }
+.wooslider:hover .wooslider-next { opacity: 0.7; right: 0; }
+.wooslider:hover .wooslider-next:hover, .wooslider:hover .wooslider-prev:hover { opacity: 1; }
+.wooslider-direction-nav .wooslider-disabled { opacity: 0!important; filter:alpha(opacity=0); cursor: default; }
+.wooslider-direction-nav a:before  { font-family: "Icons"; content: '\e006'; font-size: 80px; display: inline-block; vertical-align: bottom; }
+.wooslider-direction-nav a.wooslider-next:before  { content: '\e000'; }
+
+/* Pause/Play */
+.wooslider-pauseplay a { display: block; width: 20px; height: 20px; position: absolute; bottom: 5px; left: 10px; opacity: 0.8; z-index: 10; overflow: hidden; cursor: pointer; color: #000; }
+.wooslider-pauseplay a:before  { font-family: "flexslider-icon"; font-size: 20px; display: inline-block; content: '\f004'; }
+.wooslider-pauseplay a:hover  { opacity: 1; }
+.wooslider-pauseplay a.wooslider-play:before { content: '\f003'; }
+
+/* Control Nav */
+.wooslider-control-nav {width: 100%; position: absolute; bottom: -40px; text-align: center;}
+.wooslider-control-nav li {margin: 0 6px; display: inline-block; zoom: 1; *display: inline;}
+.wooslider-control-paging li a {width: 11px; height: 11px; display: block; background: #666; background: rgba(0,0,0,0.5); cursor: pointer; text-indent: -9999px; -webkit-border-radius: 20px; -moz-border-radius: 20px; -o-border-radius: 20px; border-radius: 20px; -webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.3); -moz-box-shadow: inset 0 0 3px rgba(0,0,0,0.3); -o-box-shadow: inset 0 0 3px rgba(0,0,0,0.3); box-shadow: inset 0 0 3px rgba(0,0,0,0.3); }
+.wooslider-control-paging li a:hover { background: #333; background: rgba(0,0,0,0.7); }
+.wooslider-control-paging li a.wooslider-active { background: #000; background: rgba(0,0,0,0.9); cursor: default; }
+
+.wooslider-control-thumbs {margin: 5px 0 0; position: static; overflow: hidden;}
+.wooslider-control-thumbs li {width: 25%; float: left; margin: 0;}
+.wooslider-control-thumbs img {width: 100%; display: block; opacity: .7; cursor: pointer;}
+.wooslider-control-thumbs img:hover {opacity: 1;}
+.wooslider-control-thumbs .wooslider-active {opacity: 1; cursor: default;}
+
+@media screen and (max-width: 860px) {
+  .wooslider-direction-nav .wooslider-prev { opacity: 1; left: 10px;}
+  .wooslider-direction-nav .wooslider-next { opacity: 1; right: 10px;}
+}
+
+/* Basic reset for better theme compatibility. */
+.wooslider { clear: both; overflow: visible !important; }
+.wooslider-carousel { z-index: 2; }
+.wooslider .slides > li { list-style: none; float: left; width: 100%; margin: 0; padding: 0; }
+.wooslider .slides > li img, .entry .wooslider .slides > li img { border: 0; box-shadow: none; margin: 0; height: auto; }
+.wooslider-control-thumbs { overflow: visible; }
+.wooslider .wooslider-control-nav > li { margin: 0 6px; padding: 0; }
+
+body .wooslider.wooslider-type-posts img, body .wooslider.wooslider-type-attachments img { border: 0; padding: 0; margin: 0; height: auto; }
+body .wooslider ul.slides, body .wooslider .wooslider-control-nav, body .wooslider .wooslider-direction-nav { padding: 0; margin: 0; }
+body .wooslider .wooslider-control-nav { position: absolute; top: 100%; margin-top: 15px; }
+body .wooslider .wooslider-control-nav.wooslider-control-thumbs { position: static; float: left; clear: both; margin-bottom: 15px; }
+body .wooslider .wooslider-control-nav.wooslider-control-thumbs li { margin-left: 0; margin-right: 15px; margin-bottom: 15px; }
+body .wooslider .wooslider-control-nav li, body .wooslider .wooslider-direction-nav li { list-style: none; }
+body .wooslider.wooslider-carousel .slides img { cursor: pointer; padding: 0; }
+body .wooslider.wooslider-carousel .slides .wooslider-active-slide img { cursor: default; }
+
+/* Layout styles for the "Posts" slideshow type. */
+@media only screen and (min-width: 768px) {
+	/* Text Left and Text Right Options */
+	.wooslider .layout-text-left img { float: right; width: 40%; }
+	.wooslider .layout-text-left .slide-excerpt { float: left; width: 50%; }
+
+	.wooslider .layout-text-right img { float: left; width: 40%; }
+	.wooslider .layout-text-right .slide-excerpt { float: right; width: 50%; }
+
+	/* Full overlay enabled */
+	.wooslider .overlay-full  { position: relative; }
+	.wooslider .overlay-full .slide-excerpt { background: #000; opacity: 0.8; color: #FFF; position: absolute; padding: 1em; }
+	.wooslider .overlay-full .slide-excerpt .slide-title { color: #FFF; }
+	.wooslider .overlay-full img { float: none; width: 100%; height: auto; }
+	.wooslider .overlay-full .slide-excerpt img { width: auto; }
+
+	body .wooslider .overlay-full.layout-text-left .slide-excerpt { left: 0; top: 0; bottom: 0; width: 30%; padding: 1em; overflow: hidden; }
+	body .wooslider .overlay-full.layout-text-right .slide-excerpt { right: 0; top: 0; bottom: 0; width: 30%; padding: 1em; overflow: hidden; }
+	body .wooslider .overlay-full.layout-text-top .slide-excerpt { left: 0; right: 0; top: 0; height: auto; padding: 1em; overflow: hidden; }
+	body .wooslider .overlay-full.layout-text-bottom .slide-excerpt { left: 0; right: 0; bottom: 0; height: auto; padding: 1em; overflow: hidden; }
+
+	/* Natural overlay enabled */
+	.wooslider .overlay-natural  { position: relative; }
+	.wooslider .overlay-natural .slide-excerpt { color: #FFF; position: absolute; float: left; padding: 0; }
+	.wooslider .overlay-natural .slide-excerpt .slide-title { color: #FFF; background: #000; opacity: 0.8; float: left; padding: 0.5em 1em; margin: 0; }
+	.wooslider .overlay-natural .slide-excerpt p { color: #FFF; background: #000; opacity: 0.8; float: left; padding: 0.5em 1em; }
+	.wooslider .overlay-natural img { float: none; width: 100%; height: auto; }
+
+	body .wooslider .overlay-natural.layout-text-left .slide-excerpt { left: 0; top: 10%; overflow: hidden; }
+	body .wooslider .overlay-natural.layout-text-right .slide-excerpt { float: right; right: 0; top: 10%; overflow: hidden; }
+	body .wooslider .overlay-natural.layout-text-right .slide-excerpt .slide-title, 
+	body .wooslider .overlay-natural.layout-text-right .slide-excerpt p { float: right; }
+	body .wooslider .overlay-natural.layout-text-top .slide-excerpt { left: 0; top: 0; overflow: hidden; }
+	body .wooslider .overlay-natural.layout-text-bottom .slide-excerpt { left: 0; bottom: 0; overflow: hidden; }
+}
+
+/* "Slides" slideshow type */
+body .wooslider .slide-content { margin: 0; padding: 0; border: 0; width: auto; height: auto; }
+
+/* Slide widget */
+.widget_wooslider_slideshow_attachments .wooslider-direction-nav a { padding: 0; }
+
+body .wooslider.wooslider-type-posts img, body .wooslider.wooslider-type-attachments img { max-width: 100%; border: none; }
+body .wooslider-control-nav { margin: 0; padding: 0; z-index: 1; }
+body .wooslider-control-nav img { border: 0; background: none; margin: 0; padding: 0; }
+body .wooslider-direction-nav a, body .widget .wooslider-direction-nav a { height: auto; line-height: 80px; text-indent: -9999px; }
+body .wooslider-direction-nav a:before { position: absolute; top: 0; left: 0; right: 0; bottom: 0; text-indent: 0; text-align: center; }
+body .wooslider-direction-nav, body .wooslider-direction-nav li { list-style: none; margin: 0; padding: 0; }
+body .wooslider-direction-nav .wooslider-next { text-align: initial; }
+body .wooslider.wooslider-type-slides .has-featured-image img.featured-image { max-width: 100%; height: auto; }
+body .wooslider.wooslider-type-slides img { max-width: 100%; padding: 0;}
