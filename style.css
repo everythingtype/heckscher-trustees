@@ -1,5 +1,5 @@
 /*  
-Theme Name: Heckscher Foundation
+Theme Name: Heckscher Foundation Trustees
 Author: Marty Spellerberg
 Author URI: http://www.martyspellerberg.com/
 */
@@ -91,20 +91,8 @@ td.numeric {text-align: right; }
 .sectionnav li:last-child:after { content: ''; }
 .sectionnav li a { white-space:nowrap; }
 
-.menu-guidelines-container { color: #00529f; }
-.menu-guidelines-container a { color: #00529f; border-bottom: 1px solid #00529f; }
-
-.menu-highlighted-projects-container { color: #00913d; }
-.menu-highlighted-projects-container a { color: #00913d; border-bottom: 1px solid #00913d; }
-
-.menu-about-us-container { color: #ef461b; }
-.menu-about-us-container a { color: #ef461b; border-bottom: 1px solid #ef461b; }
-
-.menu-additional-information-container { color: #00529f; }
-.menu-additional-information-container a { color: #00529f; border-bottom: 1px solid #00529f; }
-
-.menu-board-of-trustees-container { color: #00529f; }
-.menu-board-of-trustees-container a { color: #00529f; border-bottom: 1px solid #00529f; }
+.menu-trustees-container { color: #00529f; }
+.menu-trustees-container a { color: #00529f; border-bottom: 1px solid #00529f; }
 
 .searchintro { color: #00529F; font-weight: 200; }
 .searchintro p {margin-top: .25em;}

@@ -1,7 +1,5 @@
 <?php 
 
-if ( !post_password_required() ) : 
-
 $trusteesid = get_ID_by_slug('trustees');
 
 $yearargs = array(
@@ -45,7 +43,5 @@ $meeting = get_posts($meetingargs); ?>
 <?php 
 
 wp_reset_postdata(); 
-
-endif;
 
 ?>
