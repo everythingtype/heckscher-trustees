@@ -18,8 +18,8 @@ $yearid = $year[0]->ID;
 wp_reset_postdata();
 
 $meetingargs = array(
-	'orderby' => 'name',
-	'order' => 'ASC',
+	'orderby' => 'date',
+	'order' => 'DESC',
 	'post_parent' => $yearid,
 	'post_type' => 'page',
 	'numberposts' => 1,
