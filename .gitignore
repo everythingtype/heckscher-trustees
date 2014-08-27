@@ -2,4 +2,6 @@
 fonts/*.svg
 fonts/*.woff
 fonts/*.eot
+fonts/*.otf
 fonts/*.ttf
+fonts/203464/*
