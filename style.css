@@ -4,14 +4,14 @@ Author: Marty Spellerberg
 Author URI: http://www.martyspellerberg.com/
 */
 
-body { background: #EEEDE4; font-family:"Rotis Sans", sans-serif; font-weight: 400; font-size: 20px; line-height: 1.3; text-rendering: optimizeLegibility;  -webkit-font-smoothing: antialiased; margin: 0; padding: 0; }
+body { background: #EEEDE4; font-family:"Fakt", sans-serif; font-weight: 400; font-size: 20px; line-height: 1.3; text-rendering: optimizeLegibility;  -webkit-font-smoothing: antialiased; margin: 0; padding: 0; }
 
 a { text-decoration: none; color: #00529f; }
 a img { border: none;}
 img {width: 100%; }
 
 h1 { margin: 0; }
-h1 a { display: block; width: 248px; height: 248px; background: url('images/heckscher.svg'); background-size: 248px 248px; }
+h1 a { display: block; width: 219px; height: 244px; }
 h1 a span {display: none; }
 
 h2 { font-size: 48px; }
@@ -25,17 +25,17 @@ td.numeric {text-align: right; }
 
 /* Section Nav */
 
+.topnavmargin { width: 794px; padding: 40px 15px 0 15px; margin: auto; clear: both; overflow: hidden;}
+
 .sectionnav {overflow: hidden; }
 
 .sectionnav h1 { float: left; }
 
-.sectionnav h3 { font-family: "Rotis Serif"; font-weight: 700; font-size: 32px; line-height: 1.23; margin: 0 0 .5em 0; }
-.sectionnav h3.searchtitle {font-family: "Rotis Semi"; font-weight: 200; color: #000;}
-.sectionnav h3.searchtitle strong {font-weight: 700;}
+.sectionnav h3 { font-family: 'Mercury Text G2 A', 'Mercury Text G2 B', serif; font-weight: 400; font-style: normal; font-size: 28px; line-height: 1.23; margin: 0 0 .5em 0; }
 
-.sectionnav .navblock { width: 476px; float: right; background: #fff; padding: 14px 20px 20px 20px; height: 214px; line-height: 1.4; }
+.sectionnav .navblock { width: 476px; float: right; background: #fff; padding: 14px 20px 20px 20px; height: 204px; line-height: 1.4; }
 
-.sectionnav ul { font-weight: 800; margin: 0; padding: 0; list-style: none; font-size: 22px; line-height: 1.46; }
+.sectionnav ul { margin: 0; padding: 0; list-style: none; font-size: 22px; line-height: 1.46; }
 .sectionnav li { margin: 0; padding: 0; display: inline; } 
 .sectionnav li:after { content: ", "; }
 .sectionnav li:last-child:after { content: ''; }
@@ -50,27 +50,22 @@ td.numeric {text-align: right; }
 .pagebody { padding-bottom: 80px; }
 
 .pagebody .date {font-size: 22px; line-height: 1.4; margin: 42px 0 0 0; color: #ef461b; }
-.pagebody h2 { font-family: "Rotis Semi"; font-weight: 700; font-size: 42px; margin: .9em 0 .25em 0; }
+.pagebody h2 { font-weight: 400; font-size: 36px; margin: 51px 0 16px 0; }
 .pagebody h2 span {font-weight: 200; display: block; }
 .pagebody .date + h2 {margin-top: 0; }
 
 
 .postthumbnail {border: 7px solid #fff; background: #CDCDC2; clear: both; line-height: 0; margin: 1em 0; }
 
-#content { font-family: "Rotis Serif"; font-weight: 400; font-size: 22px; line-height: 1.36; margin-top: 1em; clear: both; }
+#content { font-size: 22px; line-height: 1.36; margin-top: 1em; clear: both; font-family: 'Mercury Text G2 A', 'Mercury Text G2 B', serif; font-weight: 400; font-style: normal; }
 
-#content h3 { font-family: "Rotis Sans"; font-weight: 800; font-size: 24px; color: #00529f; }
-#content h4 { font-family: "Rotis Sans"; font-weight: 800; font-size: 22px; margin: 22px 0 0 0; }
+#content h3 { font-size: 24px; color: #00529f; }
+#content h4 { font-size: 22px; margin: 22px 0 0 0; }
 
 #content ul { margin-top: 0;}
 
-
-#content a { font-weight: 800; border-bottom: 1px solid #00529f; }
-#content strong, #content b { font-weight: 800; }
-
-#content.liststyle strong, #content.liststyle b { font-family: "Rotis Sans"; }
-
-#content p.attribution { text-indent: 0; padding: 0 1.5em; margin: 1em 0; font-family: "Rotis Sans";}
+#content a { border-bottom: 1px solid #00529f; }
+#content strong, #content b { }
 
 
 /* Grids */
@@ -82,7 +77,7 @@ td.numeric {text-align: right; }
 .thegrid a .date { color: #ef461b; margin: 0; font-size: 18px; }
 .thegrid .sectionindicator { font-size: 16px; margin: 0; display: inline}
 
-.thegrid h4 { font-weight: 800; font-size: 20px; margin: 0; }
+.thegrid h3 { font-size: 20px; margin: 0; font-weight: 400; }
 
 .thegrid .gridthumbnail { position: absolute; left: 0; bottom: 0; line-height: 0; padding: 20px; }
 .thegrid .gridexcerpt {font-size: 14px; line-height: 1.4; color: #808080; margin-top: 16px; }
@@ -132,7 +127,7 @@ td.numeric {text-align: right; }
 
 /* Trustees */
 
-.meeting h3 { font-weight: 800; font-size: 24px; margin-top: 3em; }
+.meeting h3 { font-size: 24px; margin-top: 3em; font-weight: 400; }
 .meeting h3 span { background: #000; color: #fff; padding: .5em .5em .3em .5em; }
 .meeting .link {border-bottom: 1px solid #00529f; }
 .meeting .filesize {  color: #969696; font-size: 700; font-size: 14px; text-transform: uppercase; }
@@ -144,12 +139,12 @@ td.numeric {text-align: right; }
 .meeting .file { background: url("images/folder-file.svg"); }
 .meeting .zip { background: url("images/folder-zip.svg");}
 
-.meetingdocs { color: #969696; font-size: 24px; line-height: 1.4; margin: 0 0 .75em 0; font-weight: 800; }
+.meetingdocs { color: #969696; font-size: 24px; line-height: 1.4; margin: 0 0 .75em 0; }
 .meetingdocs .downloadall { margin-top: 1em; }
 
 .meetingitem { border-top: 2px dotted #CDCDC2; margin-bottom: 3em; }
 .meetingitem h4 { font-weight: 700; font-size: 14px; text-transform: uppercase; margin: 1em 0 .5em 0; color: #969696; }
-.meetingitem p { font-weight: 800; font-size: 24px; line-height: 1.4; margin: 0 0 .75em 0; }
+.meetingitem p { font-size: 24px; line-height: 1.4; margin: 0 0 .75em 0; }
 
 
 

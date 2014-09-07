@@ -45,21 +45,24 @@
 
 <body>
 
-	<div class="verytop">
-
-		<div class="breadcrumbs">
-
-			&nbsp;
-
-		</div>
-
-	</div>
-
-<div class="margin mainsection">
-	
+<div class="topnavmargin">
 	<div class="sectionnav">
 
-		<h1><a href="<?php bloginfo('url'); ?>	"><span><?php bloginfo('name'); ?></span></a></h1>
+		<h1><a href="<?php bloginfo('url'); ?>">
+
+			<!--[if lte IE 8]>
+				<img src="<?php echo get_stylesheet_directory_uri() ?>/images/heckscher.gif" alt="<?php bloginfo('name'); ?>" />
+			<![endif]-->
+
+			<!--[if gt IE 8]>
+				<img src="<?php echo get_stylesheet_directory_uri() ?>/images/heckscher.svg" alt="<?php bloginfo('name'); ?>" />
+			<!--<![endif]-->
+
+			<!--[if !IE]><!-->
+				<img src="<?php echo get_stylesheet_directory_uri() ?>/images/heckscher.svg" alt="<?php bloginfo('name'); ?>" />
+			<!--<![endif]-->
+
+		</a></h1>
 
 		<div class="navblock">
 
@@ -69,3 +72,6 @@
 		</div>
 
 	</div>
+</div>
+
+<div class="margin mainsection">
