@@ -1,151 +1,39 @@
-/*
-This CSS resource incorporates links to font software which is the valuable copyrighted
-property of Monotype Imaging and/or its suppliers. You may not attempt to copy, install,
-redistribute, convert, modify or reverse engineer this font software. Please contact Monotype
-Imaging with any questions regarding Web Fonts:  http://webfonts.fonts.com
-*/
-
-/* Rotis Sans */
+/* Fakt Pro */
 
 @font-face {
-	/* Rotis® Sans Serif 45 Light */
-	font-family:"Rotis Sans";
-	font-weight: 200;
-	font-style: normal;
-	src:url("936d702e-cc78-418c-bf42-07956a0e18e0.eot?#iefix");
-	src:url("936d702e-cc78-418c-bf42-07956a0e18e0.eot?#iefix") format("eot"),url("8acd0e02-7a91-4973-9c61-755704217f62.woff") format("woff"),url("f308cbe1-92de-408b-91bf-9c839ab3e687.ttf") format("truetype"),url("d7f4e9a4-5ff5-4460-96a6-8ae5990d4ccd.svg#d7f4e9a4-5ff5-4460-96a6-8ae5990d4ccd") format("svg");
-}
-
-@font-face {
-	/* Rotis® Sans Serif 46 Light Italic */
-	font-family:"Rotis Sans";
-	font-weight: 200;
-	font-style: italic;
-	src:url("1f3e93c6-507f-42ce-99ff-0c56ad99fef2.eot?#iefix");
-	src:url("1f3e93c6-507f-42ce-99ff-0c56ad99fef2.eot?#iefix") format("eot"),url("6ea8a73f-c5a8-459e-b22f-dffe6a99f71e.woff") format("woff"),url("24e663f4-051d-454d-8b90-d729ac47bb27.ttf") format("truetype"),url("8fb89571-1674-47a5-a883-23217282a94d.svg#8fb89571-1674-47a5-a883-23217282a94d") format("svg");
-}
-
-@font-face {
-	/* Rotis® Sans Serif 55 Regular */
-	font-family:"Rotis Sans";
+	/* FaktPro-Normal */
+	font-family:"Fakt";
 	font-weight: 400;
 	font-style: normal;
-	src:url("d3158683-496c-49da-9a42-6a2ab1f8457a.eot?#iefix");
-	src:url("d3158683-496c-49da-9a42-6a2ab1f8457a.eot?#iefix") format("eot"),url("60d6e9b1-72ed-49c7-bcd9-026d74b98deb.woff") format("woff"),url("03122496-25a2-4eb5-8181-fc843043fcc3.ttf") format("truetype"),url("e1a0a2cd-e8f5-41a5-952b-1949af850606.svg#e1a0a2cd-e8f5-41a5-952b-1949af850606") format("svg");
+	src:url("FaktPro-Normal.eot?#iefix");
+	src:url("FaktPro-Normal.eot?#iefix") format("eot"),url("FaktPro-Normal.woff") format("woff"),url("FaktPro-Normal.ttf") format("truetype");
 }
 
 @font-face {
-	/* Rotis® Sans Serif 56 Italic */
-	font-family:"Rotis Sans";
+	/* FaktPro-NormalItalic */
+	font-family:"Fakt";
 	font-weight: 400;
 	font-style: italic;
-	src:url("ab60f47e-ecee-4cd6-86b9-54166c1fe42b.eot?#iefix");
-	src:url("ab60f47e-ecee-4cd6-86b9-54166c1fe42b.eot?#iefix") format("eot"),url("cadf8785-780e-486c-8257-f3315aeafdb9.woff") format("woff"),url("9b599527-13af-4402-98a6-7ed7a0383430.ttf") format("truetype"),url("3adfa7c2-d35a-42db-bd79-7abe704d6a9a.svg#3adfa7c2-d35a-42db-bd79-7abe704d6a9a") format("svg");
+	src:url("FaktPro-NormalItalic.eot?#iefix");
+	src:url("FaktPro-NormalItalic.eot?#iefix") format("eot"),url("FaktPro-NormalItalic.woff") format("woff"),url("FaktPro-NormalItalic.ttf") format("truetype");
 }
 
 @font-face {
-	/* Rotis® Sans Serif 65 Bold */
-	font-family:"Rotis Sans";
+	/* FaktPro-Bold */
+	font-family:"Fakt";
 	font-weight: 700;
 	font-style: normal;
-	src:url("bfaa64da-e2ff-4871-9db9-9853cec95733.eot?#iefix");
-	src:url("bfaa64da-e2ff-4871-9db9-9853cec95733.eot?#iefix") format("eot"),url("a789b8d7-2c89-433b-8852-dc661d2fb383.woff") format("woff"),url("c7ede56d-0306-445f-ad54-23e574bdcb4f.ttf") format("truetype"),url("31d819d5-8d6e-44d8-af1c-ec4d45138bde.svg#31d819d5-8d6e-44d8-af1c-ec4d45138bde") format("svg");
+	src:url("FaktPro-Bold.eot?#iefix");
+	src:url("FaktPro-Bold.eot?#iefix") format("eot"),url("FaktPro-Bold.woff") format("woff"),url("FaktPro-Bold.ttf") format("truetype");
 }
 
 @font-face {
-	/* Rotis® Sans Serif 76 Extra Bold */
-	font-family:"Rotis Sans";
-	font-weight: 800;
-	font-style: normal;
-	src:url("7e5aeac5-0308-416d-a347-0aaad96a2d31.eot?#iefix");
-	src:url("7e5aeac5-0308-416d-a347-0aaad96a2d31.eot?#iefix") format("eot"),url("13f09a40-3a24-44ca-8083-7c5e67fe802c.woff") format("woff"),url("c15c78f4-0b68-45e1-9e4e-5abf429825f4.ttf") format("truetype"),url("47e771a0-71f8-457b-a507-26686cf45aad.svg#47e771a0-71f8-457b-a507-26686cf45aad") format("svg");
-}
-
-
-/* Rotis Semi */
-
-@font-face{
-	/* Rotis® Semi Sans 45 Light */
-	font-family:"Rotis Semi";
-	font-weight: 200;
-	font-style: normal;
-	src:url("9c449cb0-4f5c-4958-a3c8-72a13b6835bf.eot?#iefix");
-	src:url("9c449cb0-4f5c-4958-a3c8-72a13b6835bf.eot?#iefix") format("eot"),url("87e4fbec-eb91-40ce-9f98-f46345e41902.woff") format("woff"),url("3ec4c3fb-2e76-4362-abe6-972f798a0c7b.ttf") format("truetype"),url("fcebc14a-6a7b-4c2f-891b-a15d30a4d6f7.svg#fcebc14a-6a7b-4c2f-891b-a15d30a4d6f7") format("svg");
-}
-
-@font-face{
-	/* Rotis® Semi Sans 46 Light Italic */
-	font-family:"Rotis Semi";
-	font-weight: 200;
-	font-style: italic;
-	src:url("48d5c99c-b818-4b04-a1c5-ad115a0b631c.eot?#iefix");
-	src:url("48d5c99c-b818-4b04-a1c5-ad115a0b631c.eot?#iefix") format("eot"),url("d9335722-cf6b-4399-9dcb-f9858c235dc6.woff") format("woff"),url("ae3bc661-4261-4d30-9e62-7dbbb7836416.ttf") format("truetype"),url("c2e6ef10-f44e-46fb-8333-9a1e25ec4289.svg#c2e6ef10-f44e-46fb-8333-9a1e25ec4289") format("svg");
-}
-
-@font-face{
-	/* Rotis® Semi Sans 55 Roman */
-	font-family:"Rotis Semi";
-	font-weight: 400;
-	font-style: normal;
-	src:url("a5a17ae1-96f3-4c04-a14a-1fc6970ca604.eot?#iefix");
-	src:url("a5a17ae1-96f3-4c04-a14a-1fc6970ca604.eot?#iefix") format("eot"),url("0bfc673c-2906-4ddd-bfee-c34fe599d5f1.woff") format("woff"),url("844a0f8e-0d48-4f07-b2f2-2212a435720d.ttf") format("truetype"),url("2443883a-f1ad-4674-8c09-72449de88874.svg#2443883a-f1ad-4674-8c09-72449de88874") format("svg");
-}
-
-@font-face{
-	/* Rotis® Semi Sans 56 Italic */
-	font-family:"Rotis Semi";
-	font-weight: 400;
-	font-style: italic;
-	src:url("9de748ee-4be3-4001-b510-c04a18debf12.eot?#iefix");
-	src:url("9de748ee-4be3-4001-b510-c04a18debf12.eot?#iefix") format("eot"),url("e001be3a-5566-49f3-91c2-469d647a155b.woff") format("woff"),url("78308276-efe1-4fdb-81d0-00145b0d7c16.ttf") format("truetype"),url("bf436f25-8378-4272-982d-4d1fd52cf93f.svg#bf436f25-8378-4272-982d-4d1fd52cf93f") format("svg");
-}
-
-@font-face {
-	/* Rotis® Semi Sans 65 Bold */
-	font-family:"Rotis Semi";
+	/* FaktPro-BoldItalic */
+	font-family:"Fakt";
 	font-weight: 700;
-	font-style: normal;
-	src:url("2b2f277a-8b88-4f8c-a799-a1e72b121870.eot?#iefix");
-	src:url("2b2f277a-8b88-4f8c-a799-a1e72b121870.eot?#iefix") format("eot"),url("9e00d983-c284-4b3c-85ac-b9ce24a76878.woff") format("woff"),url("37c52baa-e5bf-428e-9d9c-7c8019cf81bc.ttf") format("truetype"),url("08f1a594-8dbd-4a8b-b573-daff29c0820d.svg#08f1a594-8dbd-4a8b-b573-daff29c0820d") format("svg");
-}
-
-@font-face{
-	/* Rotis® Semi Sans 75 Extra Bold */
-	font-family:"Rotis Semi";
-	font-weight: 800;
-	font-style: normal;
-	src:url("858f30fa-2277-425c-947b-2c131bb6440b.eot?#iefix");
-	src:url("858f30fa-2277-425c-947b-2c131bb6440b.eot?#iefix") format("eot"),url("7e2d8f56-b470-4125-b39e-c46a84be4631.woff") format("woff"),url("12500a8a-bf08-412c-810e-8fb7e0f6973e.ttf") format("truetype"),url("6aa8fb64-1a11-4fc8-9722-fde70822911a.svg#6aa8fb64-1a11-4fc8-9722-fde70822911a") format("svg");
-}
-
-
-/* Rotis Serif */
-
-@font-face{
-	/* Rotis® Serif 55 Roman */
-	font-family:"Rotis Serif";
-	font-weight: 400;
-	font-style: normal;
-	src:url("74ea0edf-29bc-4f75-98fd-eb026fefb754.eot?#iefix");
-	src:url("74ea0edf-29bc-4f75-98fd-eb026fefb754.eot?#iefix") format("eot"),url("1bc0a853-5b9e-4736-a57e-ea3ae914c991.woff") format("woff"),url("5307f910-9b36-4b29-9795-7afdf3c60cdd.ttf") format("truetype"),url("2ea77c4f-6bfc-426a-b5a4-09988018d555.svg#2ea77c4f-6bfc-426a-b5a4-09988018d555") format("svg");
-}
-
-@font-face{
-	/* Rotis® Serif 56 Italic */
-	font-family:"Rotis Serif";
-	font-weight: 400;
 	font-style: italic;
-	src:url("863b257d-ed78-4f60-ab83-9bbc60b7c7d4.eot?#iefix");
-	src:url("863b257d-ed78-4f60-ab83-9bbc60b7c7d4.eot?#iefix") format("eot"),url("94c42787-1456-4af7-8216-ff5a7e0a4661.woff") format("woff"),url("3a4246fe-af63-4f63-a04c-b86b844138ce.ttf") format("truetype"),url("0b9f3e5d-ea3a-4fe7-ac88-17e177c67a61.svg#0b9f3e5d-ea3a-4fe7-ac88-17e177c67a61") format("svg");
-}
-
-@font-face{
-	/* Rotis® Serif 65 Bold */
-	font-family:"Rotis Serif";
-	font-weight: 700;
-	font-style: normal;
-	src:url("c6a96b9b-62f0-47e4-9940-951ae73361b5.eot?#iefix");
-	src:url("c6a96b9b-62f0-47e4-9940-951ae73361b5.eot?#iefix") format("eot"),url("d7900ba2-e7eb-4d45-8812-810e826b55af.woff") format("woff"),url("e54c7f88-edd7-4774-953a-40da6442f717.ttf") format("truetype"),url("cd3a31cf-80ef-42ca-81ae-1546d476cc0a.svg#cd3a31cf-80ef-42ca-81ae-1546d476cc0a") format("svg");
+	src:url("FaktPro-BoldItalic.eot?#iefix");
+	src:url("FaktPro-BoldItalic.eot?#iefix") format("eot"),url("FaktPro-BoldItalic.woff") format("woff"),url("FaktPro-BoldItalic.ttf") format("truetype");
 }
 
 
@@ -169,3 +57,4 @@ Imaging with any questions regarding Web Fonts:  http://webfonts.fonts.com
 .icon-backarrow:before { content: '\e006'; }
 .icon-togglearrow-down:before { content: '\e007'; }
 .icon-togglearrow-up:before { content: '\e008'; }
+.icon-print:before { content: '\e009'; }

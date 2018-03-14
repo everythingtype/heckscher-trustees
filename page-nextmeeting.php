@@ -9,7 +9,7 @@ $yearargs = array(
 	'order' => 'DESC',
 	'post_parent' => $trusteesid,
 	'post_type' => 'page',
-	'numberposts'     => 1,
+	'numberposts' => 1,
 	'post_status' => 'publish'
 ); 
 
@@ -20,7 +20,7 @@ $yearid = $year[0]->ID;
 wp_reset_postdata();
 
 $meetingargs = array(
-	'orderby' => 'name',
+	'orderby' => 'date',
 	'order' => 'DESC',
 	'post_parent' => $yearid,
 	'post_type' => 'page',

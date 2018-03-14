@@ -27,17 +27,7 @@
 		<meta name="msapplication-TileColor" content="#ffffff"/> 
 		<meta name="msapplication-TileImage" content="<?php echo get_stylesheet_directory_uri() ?>/images/favicons/favicon-144.png"/>
 
-		<!-- Fonts.com -->
-		<script type="text/javascript">
-		var MTIProjectId='40fa9ea9-bff7-40ab-8253-f2ba9e038a4f';
-		 (function() {
-		        var mtiTracking = document.createElement('script');
-		        mtiTracking.type='text/javascript';
-		        mtiTracking.async='true';
-		        mtiTracking.src=('https:'==document.location.protocol?'https:':'http:')+'//fast.fonts.net/t/trackingCode.js';
-		        (document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild( mtiTracking );
-		   })();
-		</script>
+		<link rel="stylesheet" type="text/css" href="//cloud.typography.com/7239512/740324/css/fonts.css" />
 
 		<?php wp_head(); ?>
 
@@ -45,21 +35,24 @@
 
 <body>
 
-	<div class="verytop">
-
-		<div class="breadcrumbs">
-
-			&nbsp;
-
-		</div>
-
-	</div>
-
-<div class="margin mainsection">
-	
+<div class="topnavmargin">
 	<div class="sectionnav">
 
-		<h1><a href="<?php bloginfo('url'); ?>	"><span><?php bloginfo('name'); ?></span></a></h1>
+		<h1><a href="<?php bloginfo('url'); ?>">
+
+			<!--[if lte IE 8]>
+				<img src="<?php echo get_stylesheet_directory_uri() ?>/images/heckscher.gif" alt="<?php bloginfo('name'); ?>" />
+			<![endif]-->
+
+			<!--[if gt IE 8]>
+				<img src="<?php echo get_stylesheet_directory_uri() ?>/images/heckscher.svg" alt="<?php bloginfo('name'); ?>" />
+			<!--<![endif]-->
+
+			<!--[if !IE]><!-->
+				<img src="<?php echo get_stylesheet_directory_uri() ?>/images/heckscher.svg" alt="<?php bloginfo('name'); ?>" />
+			<!--<![endif]-->
+
+		</a></h1>
 
 		<div class="navblock">
 
@@ -69,3 +62,6 @@
 		</div>
 
 	</div>
+</div>
+
+<div class="margin mainsection">

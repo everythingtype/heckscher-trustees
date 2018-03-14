@@ -17,7 +17,7 @@ if ( $docsexist == true || get_field('zip_file') ) : ?>
 
 		<?php if ( $document['file_for_review'] ) : ?>
 
-			<li><a href="<?php echo $document['file_for_review']['url'] ?>"><span class="link"><?php echo $document['file_for_review']['title']; ?></span> <span class="foldericon <?php the_format($document['file_for_review']['mime_type']); ?>"></span> <span class="filesize"><?php echo size_format(filesize( get_attached_file( $document['file_for_review']['id'] ) ) ); ?></span></a></li>
+			<li><a href="<?php echo $document['file_for_review']['url'] ?>" target="_blank"><span class="link"><?php echo $document['file_for_review']['title']; ?></span> <span class="foldericon <?php the_format($document['file_for_review']['mime_type']); ?>"></span> <span class="filesize"><?php echo size_format(filesize( get_attached_file( $document['file_for_review']['id'] ) ) ); ?></span></a></li>
 
 		<?php endif; ?>
 
@@ -27,7 +27,7 @@ if ( $docsexist == true || get_field('zip_file') ) : ?>
 
 		<?php $thezip = get_field('zip_file'); ?>
 
-		<li class="downloadall"><a href="<?php echo $thezip['url'] ?>"><span class="link">Download All</span> <span class="foldericon <?php the_format($thezip['mime_type']); ?>"></span> <span class="filesize"><?php echo size_format(filesize( get_attached_file( $thezip['id'] ) ) ); ?></span></a></li>
+		<li class="downloadall"><a href="<?php echo $thezip['url'] ?>" target="_blank"><span class="link">Download All</span> <span class="foldericon <?php the_format($thezip['mime_type']); ?>"></span> <span class="filesize"><?php echo size_format(filesize( get_attached_file( $thezip['id'] ) ) ); ?></span></a></li>
 
 	<?php endif; ?>
 

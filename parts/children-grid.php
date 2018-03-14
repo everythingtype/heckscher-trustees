@@ -32,7 +32,7 @@ $postslist = get_posts($args); ?>
 
 		<a href="<?php echo get_permalink(); ?>" <?php if ( $i == 2 ) echo 'class="third"' ?>>
 
-			<h4><?php echo get_the_title(); ?></h4>
+			<h3><?php echo get_the_title(); ?></h3>
 
 			<?php get_template_part('parts/gridexcerpt'); ?>
 

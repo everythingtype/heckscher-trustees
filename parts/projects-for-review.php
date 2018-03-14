@@ -25,7 +25,7 @@
 
 		<?php if ( $project['file_for_review'] ) : ?>
 			<h4>File for Review</h4>
-			<p><a href="<?php echo $project['file_for_review']['url'] ?>"><span class="link"><?php echo $project['file_for_review']['title']; ?></span> <span class="foldericon <?php the_format( $project['file_for_review']['mime_type'] ); ?>"></span> <span class="filesize"><?php echo size_format(filesize( get_attached_file( $project['file_for_review']['id'] ) ) ); ?></span></a></p>
+			<p><a href="<?php echo $project['file_for_review']['url'] ?>" target="_blank"><span class="link"><?php echo $project['file_for_review']['title']; ?></span> <span class="foldericon <?php the_format( $project['file_for_review']['mime_type'] ); ?>"></span> <span class="filesize"><?php echo size_format(filesize( get_attached_file( $project['file_for_review']['id'] ) ) ); ?></span></a></p>
 		<?php endif; ?>
 
 		</div>
